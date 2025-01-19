@@ -85,14 +85,25 @@
 
 //Function
 //function declaration
-function greet(name){
-    return `Hello ${name}`
-}
-console.log(greet("Arif"))
+// function greet(name){
+//     return `Hello ${name}`
+// }
+// console.log(greet("Arif"))
 
-//arrow function
+// //arrow function
 
-const add = (a,b) => a+b
-console.log(add(5,6))
-const add1 = (a,b) => {return a+b}
-console.log(add1(5,6))
+// const add = (a,b) => a+b
+// console.log(add(5,6))
+// const add1 = (a,b) => {return a+b}
+// console.log(add1(5,6))
+
+// //string play
+// let str = "I'm learning js again"
+// console.log(str.slice(0,3)) 
+// console.log(str.split(" ")) 
+// console.log(str.replace("I'm", "You're"))
+// console.log(str.includes("js "))
+
+
+
+
