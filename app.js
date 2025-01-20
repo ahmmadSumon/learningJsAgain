@@ -148,10 +148,32 @@
 // higherOrderFunction(()=>{ console.log("This is a HOF")})
 
 //Callback Function : a function can pass as an argument as another function
-const greet = (name, callback)=>{
-    console.log(`Hello ${name}`) ;
-    callback()
+// const greet = (name, callback)=>{
+//     console.log(`Hello ${name}`) ;
+//     callback()
 
-}
+// }
 
-console.log(greet("smn", ()=>{console.log("welcome")}))
+// console.log(greet("smn", ()=>{console.log("welcome")}))
+
+//First-Class Functions
+// const func = ()=>{
+//     console.log("call this")
+// }
+// const abc = func
+// abc()
+
+
+//pure vs impure function
+// pure func can not reliable any outer variable
+// function abc (a,b){
+//    return a+b
+// }
+// console.log(abc(4,5))
+
+// //impure depends on variable
+// let num = 10;
+// function abc1 (a){
+//     return num += a
+//  }
+//  console.log(abc1(5))
