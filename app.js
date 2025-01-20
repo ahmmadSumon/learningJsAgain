@@ -82,6 +82,9 @@
 //   console.log(`${key}: ${car[key]}`);
 // }
 
+// for (i = 0; i < 5; i++){
+//     console.log(i)
+// }
 
 //Function
 //function declaration
@@ -104,6 +107,51 @@
 // console.log(str.replace("I'm", "You're"))
 // console.log(str.includes("js "))
 
+// function oodEven (a){
+//     if(a % 2 == 0){
+//     return "even"
+//     }else{
+//         return "ODD"
+//     }
+// } 
+// console.log(oodEven(55))
+
+// let number= 5
+// const result = (number % 2 === 0) ? "even" : " odd"
+// console.log(result)
+
+// function factorial(n) {
+//     if (n === 1) {
+//         return 1; // Base case
+//     }
+//     return n * factorial(n - 1); // Recursive case
+// }
+
+// console.log(factorial(5)); // Output: 120
 
 
+//Nested Function
+// const abc = ()=>{
+//     function def (){
+//         console.log("inner function")
+//     }
+//     def()
+// }
+// abc()
 
+
+//Higher-Order Function
+// function higherOrderFunction (func){
+//      func()
+// }
+
+// higherOrderFunction(()=>{ console.log("This is a HOF")})
+
+//Callback Function : a function can pass as an argument as another function
+const greet = (name, callback)=>{
+    console.log(`Hello ${name}`) ;
+    callback()
+
+}
+
+console.log(greet("smn", ()=>{console.log("welcome")}))
