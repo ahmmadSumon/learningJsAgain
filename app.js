@@ -177,3 +177,69 @@
 //     return num += a
 //  }
 //  console.log(abc1(5))
+
+
+
+//Arrays
+// everything in this bracket [] are array
+// let arr = ["apple", 10, {name:"smn", age: 30},true]
+//array can access with index 0
+//  console.log(arr[1])
+// arr[1] = 20
+//  console.log(arr)
+ 
+//Functions on array
+//common arry method
+
+//  arr.push("last") //add an element on the last
+// arr.pop(); // remove last item
+// arr.shift() // remove first item
+// arr.unshift("app") // add an element at beginning
+// arr.indexOf(20) // show the index of 20
+// const data = arr.slice(1,2) //cut
+// const data = arr.reverse()
+// const data = arr.sort()
+// console.log(data)
+
+//Iterating Over Arrays
+//You can loop through arrays using various methods.
+
+// let arr = ["apple", 10, {name:"smn", age: 30},true]
+
+// // for(let i = 0; i < arr.length; i++){
+// //     console.log(arr[i])
+// // }
+
+// arr.forEach((arr1)=>{ console.log(arr1)})
+
+
+//Objects
+// every thing in {} braces are objects
+// let person = {
+//     name: "Sumon",
+//     age: 30,
+//     education: "Bsc",
+//     isJobHolder : false
+// }
+//access
+// console.log(person.isJobHolder)
+// console.log(person["age"])
+// //adding
+// console.log(person.height = 5.11)
+// console.log(person.isJobHolder = true)
+// //delete
+// console.log(delete person.age)
+// console.log(person)
+
+//Nested Objects:
+let person = {
+    name: "Sumon",
+    age: 30,
+    education: "Bsc",
+    isJobHolder : false,
+    address : {
+      city: "Dinajpur",
+      village : "abc"
+    }
+}
+console.log(person.address.village)
