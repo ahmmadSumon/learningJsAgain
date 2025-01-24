@@ -232,14 +232,32 @@
 // console.log(person)
 
 //Nested Objects:
-let person = {
-    name: "Sumon",
-    age: 30,
-    education: "Bsc",
-    isJobHolder : false,
-    address : {
-      city: "Dinajpur",
-      village : "abc"
-    }
-}
-console.log(person.address.village)
+// let person = {
+//     name: "Sumon",
+//     age: 30,
+//     education: "Bsc",
+//     isJobHolder : false,
+//     address : {
+//       city: "Dinajpur",
+//       village : "abc"
+//     }
+// }
+// console.log(person.address.village)
+
+
+//Timing events
+//setTimeOut
+
+// setTimeout(()=>{
+//   console.log("Hello After 2 sec")
+// },2000)
+
+// let interval = setInterval(()=>{
+//    console.log("Repeating After every 1 sec")
+// },1000)
+
+
+// setTimeout(()=>{
+//   clearInterval(interval)
+//   console.log("stopped interval")
+// },5000)
