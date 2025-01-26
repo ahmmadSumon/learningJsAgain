@@ -314,27 +314,54 @@
 // console.log(person.details())
 
 //
-function greet (name, callback){
-    console.log(`hello , ${name}`)
-    callback()
+// function greet (name, callback){
+//     console.log(`hello , ${name}`)
+//     callback()
 
+// }
+
+// function sayBye(){
+//     console.log("good bye")
+// }
+
+
+// console.log(greet("smn", sayBye))
+
+// function add (x,y){
+//     return x + y;
+
+// }
+
+// function calculate (a, b, operation)
+// {
+// return operation (a, b)
+// }
+
+// console.log(calculate(5,3, add))
+
+//
+const data = new Promise((resolve, reject)=>{
+    const success = true;
+    if (success){
+        resolve("Data successfully fetch")
+    }else{
+        reject("failed")
+    }
+
+})
+
+data.then((res)=> console.log(res))
+data.catch((err)=> console.log(err))
+
+
+async function fetchData() {
+    try {
+        const result = await Promise.resolve("Fetyched data successfully")
+        console.log(result)
+    } catch (error) {
+        console.error(error)
+        
+    }
 }
 
-function sayBye(){
-    console.log("good bye")
-}
-
-
-console.log(greet("smn", sayBye))
-
-function add (x,y){
-    return x + y;
-
-}
-
-function calculate (a, b, operation)
-{
-return operation (a, b)
-}
-
-console.log(calculate(5,3, add))
+fetchData()
