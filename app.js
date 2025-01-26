@@ -185,12 +185,13 @@
 // let arr = ["apple", 10, {name:"smn", age: 30},true]
 //array can access with index 0
 //  console.log(arr[1])
-// arr[1] = 20
+// arr[1] = 20 //modifying 
 //  console.log(arr)
- 
-//Functions on array
-//common arry method
-
+// let arr = ["apple", 10, {name:"smn", age: 30},true]
+// //Functions on array
+// //common arry method
+// arr.pop(); // remove last item
+// console.log(arr)
 //  arr.push("last") //add an element on the last
 // arr.pop(); // remove last item
 // arr.shift() // remove first item
@@ -211,7 +212,10 @@
 // // }
 
 // arr.forEach((arr1)=>{ console.log(arr1)})
-
+// let marks = [80, 90, 75, 85];
+// for (let i = 0; i < marks.length; i++) {
+//     console.log(`Mark ${i + 1}: ${marks[i]}`);
+// }
 
 //Objects
 // every thing in {} braces are objects
@@ -260,4 +264,53 @@
 // setTimeout(()=>{
 //   clearInterval(interval)
 //   console.log("stopped interval")
-// },5000)
+// },5000)\
+
+//operation in Objects
+//freeze
+// let products = {
+//     name: "Arif",
+//     age: 25
+// }
+
+// Object.freeze(products)
+// products.name = "sumon"
+
+// console.log(products)
+
+// Object.seal(products)
+// products.address = "Rawalpindi";
+// delete products.age;
+// console.log(products)
+
+//avoid reffernce and how to clone
+
+// let pd = products
+// pd.name = "smn"
+// console.log(pd)
+// console.log(products)
+
+// let pd2 = Object.assign({},products)
+
+// pd2.name = "sumon";
+// console.log(pd2)
+// console.log(products)
+
+//can use spread operator
+// let pd3 = {...products}
+// pd3.name = "ahmmad"
+// console.log(pd3)
+// console.log(products)
+
+//destructuring and this
+
+// let person = {name:"arif", age:27, isDev : true ,
+//     details : function (){
+//         console.log(`Name : ${this.name} and isdev: ${this.isDev}`)
+//     }
+// }
+// // let {name, isDev , age} = person
+// // console.log(name,isDev, age)
+// console.log(person.details())
+
+
