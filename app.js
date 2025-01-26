@@ -313,4 +313,28 @@
 // // console.log(name,isDev, age)
 // console.log(person.details())
 
+//
+function greet (name, callback){
+    console.log(`hello , ${name}`)
+    callback()
 
+}
+
+function sayBye(){
+    console.log("good bye")
+}
+
+
+console.log(greet("smn", sayBye))
+
+function add (x,y){
+    return x + y;
+
+}
+
+function calculate (a, b, operation)
+{
+return operation (a, b)
+}
+
+console.log(calculate(5,3, add))
