@@ -364,4 +364,4 @@ async function fetchData() {
     }
 }
 
-fetchData()
+console.log(fetchData())
