@@ -340,28 +340,92 @@
 // console.log(calculate(5,3, add))
 
 //
-const data = new Promise((resolve, reject)=>{
-    const success = true;
-    if (success){
-        resolve("Data successfully fetch")
-    }else{
-        reject("failed")
-    }
+// const data = new Promise((resolve, reject)=>{
+//     const success = true;
+//     if (success){
+//         resolve("Data successfully fetch")
+//     }else{
+//         reject("failed")
+//     }
 
+// })
+
+// data.then((res)=> console.log(res))
+// data.catch((err)=> console.log(err))
+
+
+// let data2 = async function fetchData() {
+//     try {
+//         const result = await Promise.resolve("Fetched data successfully")
+//         console.log(result)
+//     } catch (error) {
+//         console.error(error)
+        
+//     }
+// }
+
+// console.log(data2())
+
+//dom
+
+// let title = document.createElement("h2")
+// title.innerText = "this is a heading"
+// title.style.color = "green"
+// title.style.backgroundColor ="red"
+// document.body.appendChild(title)
+
+// let colors = ["green","red","blue", "yellow", "pink"]
+// let index = 0;
+// document.querySelector("button").addEventListener("click", function(){
+//     let title  = document.querySelector("h1")
+
+//         index = (index + 1) % colors.length
+//         title.style.color = colors[index]
+    
+   
+// })
+// Build a To-Do App
+
+// Add tasks
+// Mark tasks as done
+// Remove tasks
+// Save tasks to localStorage
+
+let taskList = document.getElementById("task")
+
+let value = ""
+document.querySelector("input").addEventListener("input",(event)=>{
+    value= event.target.value
+    
 })
 
-data.then((res)=> console.log(res))
-data.catch((err)=> console.log(err))
+document.querySelector("button").addEventListener("click", function (event){
+    event.preventDefault()
+    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    tasks.push(value)
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+   let li = document.createElement("li")
+   li.style.display = "flex"
+   li.style.justifyContent = "space-between"
+   let done = document.createElement("button")
+   done.addEventListener("click", function(){
+      li.style.backgroundColor = "green"
+   })
+   done.textContent = "Done Task"
+   let deleteTask = document.createElement("button")
+   deleteTask.addEventListener("click", ()=>{
+    document.querySelector("ul").removeChild(li)
+   })
+   deleteTask.textContent = "Delete"
+   li.textContent = value
+   li.appendChild(done)
+   li.appendChild(deleteTask)
 
+   document.querySelector("ul").appendChild(li)
+   
 
-async function fetchData() {
-    try {
-        const result = await Promise.resolve("Fetyched data successfully")
-        console.log(result)
-    } catch (error) {
-        console.error(error)
-        
-    }
-}
+   value = ""
+   document.querySelector("input").value = ""
 
-console.log(fetchData())
+   
+})
