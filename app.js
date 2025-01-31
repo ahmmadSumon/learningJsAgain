@@ -391,41 +391,53 @@
 // Remove tasks
 // Save tasks to localStorage
 
-let taskList = document.getElementById("task")
+// let taskList = document.getElementById("task")
 
-let value = ""
-document.querySelector("input").addEventListener("input",(event)=>{
-    value= event.target.value
+// let value = ""
+// document.querySelector("input").addEventListener("input",(event)=>{
+//     value= event.target.value
     
-})
+// })
 
-document.querySelector("button").addEventListener("click", function (event){
-    event.preventDefault()
-    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    tasks.push(value)
-    localStorage.setItem("tasks", JSON.stringify(tasks))
-   let li = document.createElement("li")
-   li.style.display = "flex"
-   li.style.justifyContent = "space-between"
-   let done = document.createElement("button")
-   done.addEventListener("click", function(){
-      li.style.backgroundColor = "green"
-   })
-   done.textContent = "Done Task"
-   let deleteTask = document.createElement("button")
-   deleteTask.addEventListener("click", ()=>{
-    document.querySelector("ul").removeChild(li)
-   })
-   deleteTask.textContent = "Delete"
-   li.textContent = value
-   li.appendChild(done)
-   li.appendChild(deleteTask)
+// document.querySelector("button").addEventListener("click", function (event){
+//     event.preventDefault()
+//     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+//     tasks.push(value)
+//     localStorage.setItem("tasks", JSON.stringify(tasks))
+//    let li = document.createElement("li")
+//    li.style.display = "flex"
+//    li.style.justifyContent = "space-between"
+//    let done = document.createElement("button")
+//    done.addEventListener("click", function(){
+//       li.style.backgroundColor = "green"
+//    })
+//    done.textContent = "Done Task"
+//    let deleteTask = document.createElement("button")
+//    deleteTask.addEventListener("click", ()=>{
+//     document.querySelector("ul").removeChild(li)
+//    })
+//    deleteTask.textContent = "Delete"
+//    li.textContent = value
+//    li.appendChild(done)
+//    li.appendChild(deleteTask)
 
-   document.querySelector("ul").appendChild(li)
+//    document.querySelector("ul").appendChild(li)
    
 
-   value = ""
-   document.querySelector("input").value = ""
+//    value = ""
+//    document.querySelector("input").value = ""
 
    
-})
+// })
+
+// var a;
+// var b;
+// var c;
+// // Only change code above this line
+
+// a = a + 1;
+// console.log(a)
+// b = b + 5;
+// console.log(b)
+
+// c = c + " String!";
