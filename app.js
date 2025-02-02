@@ -441,3 +441,34 @@
 // console.log(b)
 
 // c = c + " String!";
+
+//event bubbling
+
+// document.querySelector("#parent").addEventListener("click", ()=>{
+//     alert("Parent clicked")
+// })
+// document.querySelector("#child").addEventListener("click", ()=>{
+//     alert("child clicked")
+// })
+
+//event capturing
+// document.querySelector("#parent").addEventListener("click", ()=>{
+// console.log("Parent clicked first due to capturing!")
+// },true)
+// document.querySelector("#child").addEventListener("click", ()=>{
+//     console.log("child clicked")
+//      })
+
+//event.target
+// document.querySelector("#task").addEventListener("click", (event)=>{
+//     console.log("clicked on :",event.target)
+// })
+
+//mouse event: mouseenter/mouseleave
+
+// document.querySelector(".box").addEventListener("mouseenter", ()=>{
+//     console.log("mouse enter")
+// })
+// document.querySelector(".box").addEventListener("mouseleave", ()=>{
+//     console.log("mouse leave")
+// })
