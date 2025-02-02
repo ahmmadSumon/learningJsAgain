@@ -472,3 +472,44 @@
 // document.querySelector(".box").addEventListener("mouseleave", ()=>{
 //     console.log("mouse leave")
 // })
+
+//key event
+// document.addEventListener("keyup", (event)=>{
+//   console.log("you pressed: " ,event.key)
+// })
+// document.addEventListener("keydown", (event)=>{
+//     console.log("you pressed: " ,event.key)
+//   })
+
+//   document.addEventListener("enter", (event)=>{
+//     if(event.key === "Enter"){
+//         console.log("you pressed: " ,event.key)
+//     }
+  
+//   })
+
+//preventing default
+// document.querySelector("form").addEventListener("submit", (e)=>{
+//      e.preventDefault()
+//       console.log("submission prevendet")
+// })
+
+//chnge
+// document.querySelector("input").addEventListener("change", ()=>{
+//     console.log(this.value)
+// })
+// let button = document.querySelector("#bg");
+
+// button.addEventListener("click", ()=>{
+//    button.classList.toggle("active")
+// })
+
+//Show/Hide Password
+// let input = document.querySelector("#pass")
+// document.querySelector(".icon").addEventListener("click", ()=>{
+//     if(input.type === "password"){
+//         input.type = "text"
+//     }else{
+// input.type = "password"
+//     }
+// })
