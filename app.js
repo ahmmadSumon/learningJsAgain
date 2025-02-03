@@ -513,3 +513,6 @@
 // input.type = "password"
 //     }
 // })
+document.querySelector("#bg").addEventListener("click", ()=>{
+   document.body.style.backgroundColor = "green" 
+})
