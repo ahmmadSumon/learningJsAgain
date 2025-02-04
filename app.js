@@ -523,10 +523,80 @@
     
 //     console.log(width)
 //   });
-window.addEventListener("keyup", (event)=>{
-document.querySelector(".mini-btn").addEventListener("click", ()=>{
-    document.body.style.backgroundColor = "red"
-    console.log(event.key)
+// window.addEventListener("keyup", (event)=>{
+// document.querySelector(".mini-btn").addEventListener("click", ()=>{
+//     document.body.style.backgroundColor = "red"
+//     console.log(event.key)
 
-     })
-})
+//      })
+// })
+
+
+//Using Browser Functionalities in JavaScript
+// console.log(window.innerHeight)
+// console.log(window.innerWidth)
+
+// //navigator
+
+// console.log(navigator.userAgent)
+// console.log(navigator.geolocation)
+// console.log(navigator.language)
+
+// //history
+// history.back()
+
+// //location
+// console.log(location.href)
+
+// //Local Storage (Stores Data Permanently)
+// localStorage.setItem("username", "smn"); //set data
+// console.log(localStorage.getItem("username")) //get data
+// console.log(localStorage.removeItem("username"))
+// localStorage.clear()
+
+
+// // Session Storage (Clears When Tab is Closed)
+// sessionStorage.setItem("session", "12345")
+// console.log(sessionStorage.getItem("session"))
+// sessionStorage.removeItem("session")
+// console.log(sessionStorage.getItem("session"))
+
+// //Cookies (Stores Data with Expiry)
+//  document.cookie = "username=Arif expires=Fri, 31 Dec 2025 12:00:00 UTC"
+//  console.log( document.cookie)
+
+//Web APIs in JavaScript
+
+//fetch
+
+// fetch("https://jsonplaceholder.typicode.com/posts/1")
+// .then(res=> res.json())
+// .then(data => console.log(data) )
+
+//geoapi
+
+//Geolocation API (Get User Location)
+// const location = navigator.geolocation.getCurrentPosition((position)=>{
+//     console.log( position.coords.latitude)
+//     console.log(position.coords.longitude)
+  
+      
+// })
+// console.log(location)
+
+//project
+
+document.querySelector("#savebtn").addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent form submission
+    let value = document.querySelector("#save").value; // Get input value
+    localStorage.setItem("value", value); // Save to localStorage
+    console.log(localStorage.getItem("value")); // Log stored value
+
+});
+document.querySelector("#savebtn1").addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent form submission
+    console.log("Before clear:", localStorage.getItem("value")); // Check stored value before clearing
+    localStorage.clear(); // Clear localStorage
+    console.log("After clear:", localStorage.getItem("value"));
+    
+});
