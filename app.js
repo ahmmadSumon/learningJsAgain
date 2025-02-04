@@ -586,17 +586,17 @@
 
 //project
 
-document.querySelector("#savebtn").addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent form submission
-    let value = document.querySelector("#save").value; // Get input value
-    localStorage.setItem("value", value); // Save to localStorage
-    console.log(localStorage.getItem("value")); // Log stored value
+// document.querySelector("#savebtn").addEventListener("click", (event) => {
+//     event.preventDefault(); // Prevent form submission
+//     let value = document.querySelector("#save").value; // Get input value
+//     localStorage.setItem("value", value); // Save to localStorage
+//     console.log(localStorage.getItem("value")); // Log stored value
 
-});
-document.querySelector("#savebtn1").addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent form submission
-    console.log("Before clear:", localStorage.getItem("value")); // Check stored value before clearing
-    localStorage.clear(); // Clear localStorage
-    console.log("After clear:", localStorage.getItem("value"));
+// });
+// document.querySelector("#savebtn1").addEventListener("click", (event) => {
+//     event.preventDefault(); // Prevent form submission
+//     console.log("Before clear:", localStorage.getItem("value")); // Check stored value before clearing
+//     localStorage.clear(); // Clear localStorage
+//     console.log("After clear:", localStorage.getItem("value"));
     
-});
+// });
