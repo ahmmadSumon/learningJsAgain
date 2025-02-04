@@ -513,6 +513,20 @@
 // input.type = "password"
 //     }
 // })
-document.querySelector("#bg").addEventListener("click", ()=>{
-   document.body.style.backgroundColor = "green" 
+// document.querySelector("#bg").addEventListener("click", ()=>{
+//    document.body.style.backgroundColor = "green" 
+// })
+
+// window.addEventListener("resize", function () {
+//     console.log("Window resized!");
+//     let width = window.innerWidth
+    
+//     console.log(width)
+//   });
+window.addEventListener("keyup", (event)=>{
+document.querySelector(".mini-btn").addEventListener("click", ()=>{
+    document.body.style.backgroundColor = "red"
+    console.log(event.key)
+
+     })
 })
