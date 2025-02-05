@@ -600,3 +600,48 @@
 //     console.log("After clear:", localStorage.getItem("value"));
     
 // });
+
+
+//Object-Oriented Programming (OOP) in JavaScript
+
+// class car {
+//     constructor (brand, model, cc, manufature){
+//         this.brand = brand
+//         this.model = model 
+//         this.cc = cc 
+//         this.manufature = manufature
+//     }
+
+//     details(){
+//         console.log(`details of this ${this.brand} car : 
+//             model : ${this.model}
+//             cc : ${this.cc}
+//             manufature : ${this.manufature}
+           
+//             `)
+//     }
+// }
+
+// const car1 = new car("Ferrari", "F2", 1800, "2024" )
+// const car2 = new car("Lambo", "G22", 2100, "2024" )
+
+// car1.details()
+// car2.details()
+
+
+//Constructor and Prototypes
+//adding method to prototype
+
+// function Person (name, age){
+//     this.name = name 
+//     this.age =age
+
+// }
+
+// Person.prototype.greet = function(){
+//     console.log(`my name is ${this.name} and my age is ${this.age}`)
+// }
+
+// const person1 = new Person("smn", 45)
+
+// person1.greet()
