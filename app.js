@@ -688,3 +688,35 @@
 // myDog.bark()
 
 // Getter & Setter Methods
+
+// console.log("smn", "hobby is coding")
+// console.log(45*2-10)
+// console.log("smn", "hobby is coding")
+// console.log(new Date)
+// let firstName = "arif"
+// let lastName = "ahmmad"
+// console.log(firstName + " " + lastName)
+// let value = 10;
+// console.log(`before ${value}`)
+// value= 15;
+// console.log(`after ${value}`)
+// console.error("error this is big error")
+// let b = 10;
+// console.log(b*b)
+
+// let a = true;
+
+// let value1 = 5;
+
+// if(a === true ){
+//  let total =    value1 + value
+//  return console.log(total)
+// }
+
+let age = 20;
+
+if (age >= 18){
+    console.log("adult")
+}else{
+    console.log("minor")
+}
