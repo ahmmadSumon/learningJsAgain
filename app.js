@@ -645,3 +645,46 @@
 // const person1 = new Person("smn", 45)
 
 // person1.greet()
+
+
+//call
+// const person = {
+//     name : "smn"
+// }
+
+// function greet (){
+//     console.log(`Hello ${this.name}`)
+// }
+
+// greet.call(person)
+
+//apply
+// function introduce(age, city) {
+//     console.log(`My name is ${this.name}, I am ${age} years old and live in ${city}.`);
+//   }
+  
+//   introduce.apply(person ="sf", [25, "Dhaka"]);
+
+// Extending a Class
+
+// class Animals {
+//     constructor(name){
+//         this.name = name
+//     }
+
+//     makeSound(){
+//         console.log(`${this.name} makes a sound`)
+//     }
+// }
+
+// class Dog extends Animals{
+//     bark (){
+//         console.log(`${this.name} alwys barks`)
+//     }
+// }
+
+// const myDog = new Dog("sundori")
+// myDog.makeSound()
+// myDog.bark()
+
+// Getter & Setter Methods
