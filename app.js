@@ -689,6 +689,116 @@
 
 // Getter & Setter Methods
 
+
+//Challenge: Create a Bank Account System
+//Create a BankAccount class with properties accountNumber, balance.
+//Add methods: deposit(), withdraw(), and getBalance().
+//Create an object and test these methods.
+
+
+
+// class bankAccount{
+//     constructor(accountNumber,balance){
+//         this.accountNumber = accountNumber;
+//         this.balance = balance
+//     }
+//     deposite(amount){
+//         if(amount > 0){
+//             this.balance += amount;
+//             console.log(`deposite amount ${amount} and new balance is ${this.balance}`)
+//         }else{
+//             console.log("desposite amount must be possitive")
+//         }
+//     }
+//     withdraw(amount){
+//         if(amount > this.balance){
+//             return console.log("Balance is short")
+//         }else{
+//             this.balance -= amount;
+//         console.log(
+//                 "scucessfully withdrawed"
+//             )
+//         }
+
+//     }
+
+//     getBalance(){
+//            return console.log(`current balance is ${this.balance}`) ;
+//     }
+// } 
+
+// let accInfo = new bankAccount(123456, 5000);
+
+// accInfo.getBalance();
+// accInfo.deposite(4500);
+// accInfo.getBalance ()
+// accInfo.withdraw(500)
+// accInfo.getBalance()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // console.log("smn", "hobby is coding")
 // console.log(45*2-10)
 // console.log("smn", "hobby is coding")
@@ -713,10 +823,11 @@
 //  return console.log(total)
 // }
 
-let age = 20;
+// let age = 17;
 
-if (age >= 18){
-    console.log("adult")
-}else{
-    console.log("minor")
-}
+// if (age >= 18){
+//     console.log("adult")
+// }else{
+//     console.log("minor")
+// }
+// console.log(100/0)
