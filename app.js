@@ -738,7 +738,13 @@
 
 
 
-
+// Promise.all([
+//     fetch("https://jsonplaceholder.typicode.com/posts/1"),
+//     fetch("https://jsonplaceholder.typicode.com/posts/2"),
+//   ])
+//     .then(responses => Promise.all(responses.map(res => res.json())))
+//     .then(data => console.log(data))
+//     .catch(error => console.log(error));
 
 
 
