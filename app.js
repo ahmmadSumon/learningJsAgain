@@ -747,16 +747,57 @@
 //     .catch(error => console.log(error));
 
 
+//async and await
+
+// async function fetchData() {
+//     try{
+//    let response = await fetch("https://jsonplaceholder.typicode.com/posts")
+//    let data = await response.json()
+//    console.log(data)
+//     }catch (error){
+//        console.error(error)
+//     }
+// }
+
+// fetchData()
+
+
+//setInterval
+
+// let count = 0
+
+// let interval = setInterval(() => {
+//     count++;
+//     console.log(count)
+//     if(count === 5 ) clearInterval(interval)
+    
+// }, 1000);
 
 
 
+// Challenge: Fetch Random Joke API
+
+//Use fetch() to call https://api.chucknorris.io/jokes/random.
+//Display the joke on the console.
+//Add a button to fetch a new joke every time it's clicked.
 
 
+// async function jokesApi() {
+//     try{
+//     let response = await fetch("https://api.chucknorris.io/jokes/random")
+//     let data = await response.json()
+//     let fetchdata = data
+//     document.querySelector("#newJoke").innerText = fetchdata.value
+//     console.log(fetchdata)
+//     }catch(err){
 
+//     }
+    
+// }
 
+// jokesApi()
 
-
-
+// document.querySelector("#jokes").addEventListener("click", jokesApi)
 
 
 
